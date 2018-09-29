@@ -23,7 +23,7 @@
    </div>
 
    <!-- Body -->
-   <div class="flex2">
+   <div class="flex3">
       <div class="grow1">
          <?php
             echo "Today's Date: " . date("d/m/Y") . "<br>";
