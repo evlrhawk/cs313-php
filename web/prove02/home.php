@@ -40,6 +40,7 @@
             echo "Today's Date: " . date("d/m/Y") . "<br>";
             echo " The Time is: " . date("h:i:sa");
          ?>
+         <br>
          <img src="pigeon.jpg" alt="Pigeon Shooting">
          </div>
       </div>
