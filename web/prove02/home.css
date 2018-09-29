@@ -57,6 +57,7 @@ pre{
    color: firebrick;
 }
 .grow1{
+   text-align: right;
    font-size: .9vw;
 
    flex-grow: 1;
