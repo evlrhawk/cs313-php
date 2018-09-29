@@ -1,0 +1,32 @@
+.flex1{
+   display: flex;
+   flex-direction: column;
+}
+.flex2{
+   display: flex;
+   flex-direction: row;
+}
+body{
+   background-color: darkgrey;
+}
+.HaF{
+   background-color: firebrick;
+   height: 100px;
+   width: auto; 
+   text-align: center;
+}
+.menu{
+   background-color: darkgrey;
+   border-color: black;
+   height: 30px;
+   width: auto;
+}
+.menu a{
+   display: block;
+   text-align: center;
+   text-decoration: none;
+}
+.navbar a:hover{
+   background: black;
+   color: firebrick;
+}
