@@ -41,6 +41,7 @@
             echo " The Time is: " . date("h:i:sa");
          ?>
          <br>
+         <br>
          <img src="pigeon.jpg" alt="Pigeon Shooting">
          </div>
       </div>
