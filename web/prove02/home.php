@@ -33,13 +33,14 @@
             I also love to shoot guns and bows and arrows. I've always wanted to get
             into hunting, but I've never had the chance, but I still hope to.
          </pre>
-         <img src="pigeon.jpg" alt="Pigeon Shooting">
+
       </div>
       <div class="grow1">
          <?php
             echo "Today's Date: " . date("d/m/Y") . "<br>";
             echo " The Time is: " . date("h:i:sa");
          ?>
+         <img src="pigeon.jpg" alt="Pigeon Shooting">
          </div>
       </div>
    </div>
