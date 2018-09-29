@@ -5,7 +5,8 @@ ul{
    margin-left: 40%;
 }
 img{
-   max-height: 200px;
+   float: right;
+   max-height: 400px;
    width: auto;
 }
 .flex1{
