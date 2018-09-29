@@ -24,8 +24,23 @@
 
    <!-- Body -->
    <div class="flex2">
-      <div class="grow1"></div>
-      <div class="grow2"></div>
+      <div class="grow1">
+         <?php
+            echo "Today's Date: " . date("d/m/Y") . "<br>";
+            echo " The Time is: " . date("h:i:sa");
+         ?>
+         </div>
+      </div>
+      <div class="grow2">
+         <pre>
+            My name is Thomas Burr. I am originally from VA. While I 
+            thoroughly enjoy computers, coding, videogames, etc. I like to
+            break out of the stereotypical nerd category. I love the outdoors.
+            Some of my favorite past times include camping, hiking, and hammocking.
+            I also love to shoot guns and bows and arrows. I've always wanted to get
+            into hunting, but I've never had the chance, but I still hope to.
+         </pre>
+      </div>
       
    </div>
    
