@@ -49,9 +49,11 @@ ul{
    color: firebrick;
 }
 .grow1{
+   font-size: 1.25vw;
    float: left;
    /*flex-grow: 1;*/
 }
 .grow2{
+   font-size: 1vw;
    /*flex-grow: 2;*/
 }

@@ -23,15 +23,8 @@
    </div>
 
    <!-- Body -->
-   <div class="flex3">
-      <div>
-         <?php
-            echo "Today's Date: " . date("d/m/Y") . "<br>";
-            echo " The Time is: " . date("h:i:sa");
-         ?>
-         </div>
-      </div>
-      <div >
+   <div class="flex3"> 
+      <div class="grow2">
          <pre>
             My name is Thomas Burr. I am originally from VA. While I 
             thoroughly enjoy computers, coding, videogames, etc. I like to
@@ -41,7 +34,13 @@
             into hunting, but I've never had the chance, but I still hope to.
          </pre>
       </div>
-      
+      <div class="grow1">
+         <?php
+            echo "Today's Date: " . date("d/m/Y") . "<br>";
+            echo " The Time is: " . date("h:i:sa");
+         ?>
+         </div>
+      </div>
    </div>
    
    <!-- Footer -->
