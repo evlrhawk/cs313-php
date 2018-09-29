@@ -4,6 +4,10 @@ body{
 ul{
    margin-left: 40%;
 }
+img{
+   max-height: 200px;
+   width: auto;
+}
 .flex1{
    display: flex;
    flex-direction: column;
