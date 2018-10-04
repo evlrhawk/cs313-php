@@ -11,10 +11,16 @@
 <body>
    
 <?php
+   
+   if ($_SESSION["count"]) {
+      $_SESSION["count"] = $SESSION["count"] + 1;
+   }
+   else{
+      $_SESSION["count"] = 0;
+   }
+   
 
-   $_SESSION["count"] = 0;
-
-   echo "You have visited" . $_SESSION["count"] . "times.<br>";
+   echo "You have visited " . $_SESSION["count"] . " times.<br>";
 
 ?>   
 
