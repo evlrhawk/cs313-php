@@ -1,7 +1,6 @@
 <?php
    
-   setcookie("fav-text", "c is for cookie", time() + (86400 * 7));
-
+   session_start();
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +10,13 @@
 </head>
 <body>
    
-   <p>This is a page</p>
+<?php
+
+   $_SESSION["count"] = 0;
+
+   echo "You have visited" . $_SESSION["count"] . "times.<br>";
+
+?>   
 
 </body>
 </html>
