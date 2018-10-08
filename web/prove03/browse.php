@@ -8,6 +8,7 @@ session_start();
 <html>
 <head>
    <title>"Prime" Beef Cuts</title>
+   <link rel="stylesheet" type="text/css" href="browse.php">
 </head>
 <body>
    <div class="header">
