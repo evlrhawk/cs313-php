@@ -1,0 +1,20 @@
+.flex{
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+}
+.flex2{
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+}
+.header{
+   height: 150px;
+   width: auto;
+   background: firebrick;
+   text-align: center;
+}
+body{
+   background-image: url("Steak-Chart.jpg");
+   background-attachment: fixed;
+}
