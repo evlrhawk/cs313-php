@@ -11,7 +11,7 @@
   
 </head>
 <body>
-
+<!-- header -->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -30,33 +30,29 @@
         <li><a href="contacts.php">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login | Sign Up</a></li>
       </ul>
     </div>
   </div>
 </nav>
   
+  <!-- body -->
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+      <p><img src="https://cdn.shopify.com/s/files/1/0818/5843/products/rib-brisket-burnt-end-web_2048x2048.jpg?v=1527204126" alt="Burnt Ends"></p>
     </div>
     <div class="col-sm-8 text-left"> 
       <h1>Welcome to Righteous Slice</h1>
-      <pre>Here you will find the world's greatest recipe repository. Whether 
-      you're here to find, or here to share, we are here for you!</pre>
+      <p>Here you will find the world's greatest recipe repository.<br> 
+      Whether you're here to find, or here to share, we are here for you!</p>
       <hr>
       <h3></h3>
       <p>Lorem ipsum...</p>
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
+        <img src="http://blog.gentlemint.com/media/photos/plated-tomahawk-steak-restaurant.jpg.1170x750_q85.jpg" alt=" Tomahawk Ribeye">
       </div>
     </div>
   </div>
