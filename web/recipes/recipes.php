@@ -40,15 +40,16 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><img src="https://cdn.shopify.com/s/files/1/0818/5843/products/rib-brisket-burnt-end-web_2048x2048.jpg?v=1527204126" alt="Burnt Ends"></p>
+      <p><img src="https://www.vindulge.com/wp-content/uploads/2016/04/Mexican-Smoked-Burgers-2-727x1024.jpg" alt="Burnt Ends"></p>
     </div>
     <div class="col-sm-8 text-left"> 
       <h1>Welcome to Righteous Recipes</h1>
-      <p>Here you will find the world's greatest recipe repository.<br> 
-      Whether you're here to find, or here to share, we are here for you!</p>
+      <p> Whether you're here to find, or here to share, we are here for you!</p>
       <hr>
       <h3></h3>
-      <p>Lorem ipsum...</p>
+      <p>Here you will find recipes to satisfy all your savory needs!</p>
+      <p>We have recipes for everything from desserts, to pastas, and <br>
+      even smoked meats!</p>
     </div>
     <div class="col-sm-2 sidenav">
         <img src="http://blog.gentlemint.com/media/photos/plated-tomahawk-steak-restaurant.jpg.1170x750_q85.jpg" alt=" Tomahawk Ribeye">
