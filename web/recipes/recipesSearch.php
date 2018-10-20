@@ -2,6 +2,18 @@
 // connect to db
 require('dbConnect.php');
 $db = get_db();
+
+// query for all recipes
+// $stmt = $db->prepare('SELECT * FROM table WHERE id=:id AND name=:name');
+// $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+// $stmt->bindValue(':name', $name, PDO::PARAM_STR);
+// $stmt->execute();
+// $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$stmt = $db->prepare('SELECT id, recipe, pic FROM recipes');
+$stmt->execute();
+$recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// go through each recipe in the result and display it
 ?>
 
 <!DOCTYPE html>
@@ -49,13 +61,11 @@ $db = get_db();
       <p><img src="https://www.vindulge.com/wp-content/uploads/2016/04/Mexican-Smoked-Burgers-2-727x1024.jpg" alt="Burnt Ends"></p>
     </div>
     <div style="text-align: center;" class="col-sm-8 text-left"> 
-      <h1>Welcome to Righteous Recipes</h1>
-      <p> Whether you're here to find, or here to share, we are here for you!</p>
+      <h1>Search, and find your delight!! b</h1>
+      <p></p>
       <hr>
       <h3></h3>
-      <p>Here you will find recipes to satisfy all your savory needs!</p>
-      <p>We have recipes for everything from desserts, to pastas, and <br>
-      even smoked meats!</p>
+      <p></p>
     </div>
     <div class="col-sm-2 sidenav">
         <img src="http://blog.gentlemint.com/media/photos/plated-tomahawk-steak-restaurant.jpg.1170x750_q85.jpg" alt=" Tomahawk Ribeye">
