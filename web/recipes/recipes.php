@@ -42,7 +42,7 @@
     <div class="col-sm-2 sidenav">
       <p><img src="https://www.vindulge.com/wp-content/uploads/2016/04/Mexican-Smoked-Burgers-2-727x1024.jpg" alt="Burnt Ends"></p>
     </div>
-    <div class="col-sm-8 text-left"> 
+    <div style="text-align: center;" class="col-sm-8 text-left"> 
       <h1>Welcome to Righteous Recipes</h1>
       <p> Whether you're here to find, or here to share, we are here for you!</p>
       <hr>
