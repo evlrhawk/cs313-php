@@ -13,6 +13,10 @@ $stmt = $db->prepare('SELECT id, name, pic FROM recipes WHERE id < 9');
 $stmt->execute();
 $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+$stmt = $db->prepare('SELECT id, category FROM categories');
+$stmt->execute();
+$categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 // go through each recipe in the result and display it
 ?>
 
@@ -61,11 +65,12 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <form>
          Category:
          <ul>
-            <li><a href="#">Pasta</a></li>
-            <li><a href="#">Fish</a></li>
-            <li><a href="#">Beef</a></li>
-            <li><a href="#">Chicken</a></li>
-            <li><a href="#">Pork</a></li>
+            <?php
+               foreach ($categories as $category) {
+                  $name = $category['category'];
+                  echo "<li><a href='#'>Pasta</a></li>";
+               }
+            ?>
          </ul>
       </form>
     </div> 
