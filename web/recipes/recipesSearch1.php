@@ -10,7 +10,7 @@ $db = get_db();
 // $stmt->execute();
 // $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$id = $_GET[id];
+$id = $_GET["id"];
 
 $stmt = $db->prepare('SELECT id, name, pic FROM recipes WHERE categories_id = $id');
 $stmt->execute();
