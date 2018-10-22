@@ -68,7 +68,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php
                foreach ($categories as $category) {
                   $name = $category['category'];
-                  echo "<li><a href='#'>Pasta</a></li>";
+                  echo "<li><a href='#'>$name</a></li>";
                }
             ?>
          </ul>
