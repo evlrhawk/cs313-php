@@ -78,3 +78,9 @@ on high for 4-6 hours. Shred chicken, add cheddar cheese, and cook
 for another 15 minutes. Scoop chicken into tortillas and roll up 
 into taquitos. Bake in oven for 8-10 minutes, at 375, or until crispy.'
 );
+
+UPDATE recipes SET pic = 'https://www.smoking-meat.com/image-files/IMG_1331-1000x667-800x534.jpg' 
+WHERE id = 1;
+
+UPDATE recipes SET pic = 'https://www.slowcookersociety.com/wp-content/uploads/2017/05/Crock-Pot-Cream-Cheese-Chicken-Taquitos1.jpg' 
+WHERE id = 2;
