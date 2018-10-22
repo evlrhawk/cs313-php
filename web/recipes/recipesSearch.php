@@ -57,7 +57,7 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <!-- body -->
 <div class="container-fluid text-center">    
   <div class="row content">
-    <div class="col-sm-8 text-center"> 
+    <div style="text-align: center;" class="col-sm-8 text-left"> 
       <h1>Search, and find your delight!!</h1>
       <p></p>
       <hr>
