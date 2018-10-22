@@ -45,10 +45,10 @@ $db = get_db();
   <!-- body -->
 <div class="container-fluid text-center">    
   <div class="row content">
-    <div class="col-sm-2 sidenav">
+    <div class="col-sm-3 sidenav">
       <p><img src="https://www.vindulge.com/wp-content/uploads/2016/04/Mexican-Smoked-Burgers-2-727x1024.jpg" alt="Burnt Ends"></p>
     </div>
-    <div style="text-align: center;" class="col-sm-8 text-left"> 
+    <div style="text-align: center;" class="col-sm-6 text-left"> 
       <h1>Welcome to Righteous Recipes</h1>
       <p> Whether you're here to find, or here to share, we are here for you!</p>
       <hr>
@@ -57,7 +57,7 @@ $db = get_db();
       <p>We have recipes for everything from desserts, to pastas, and <br>
       even smoked meats!</p>
     </div>
-    <div class="col-sm-2 sidenav">
+    <div class="col-sm-3 sidenav">
         <img src="http://blog.gentlemint.com/media/photos/plated-tomahawk-steak-restaurant.jpg.1170x750_q85.jpg" alt=" Tomahawk Ribeye">
     </div>
   </div>
