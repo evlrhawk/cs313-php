@@ -57,7 +57,8 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <!-- body -->
 <div class="container-fluid text-center">    
   <div class="row content">
-    <div style="text-align: center;" class="col-sm-8 text-left"> 
+    <div style="text-align: center;" class="col-sm-8 text-left">
+    <br> <br> 
       <?php
          foreach ($recipes as $recipe) {
             $name = $recipe['name'];
