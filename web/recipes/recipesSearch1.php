@@ -9,7 +9,10 @@ $db = get_db();
 // $stmt->bindValue(':name', $name, PDO::PARAM_STR);
 // $stmt->execute();
 // $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-$stmt = $db->prepare('SELECT id, name, pic FROM recipes WHERE id < 9');
+
+$id = $_GET[id]
+
+$stmt = $db->prepare('SELECT id, name, pic FROM recipes WHERE categories_id = $id');
 $stmt->execute();
 $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -68,8 +71,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php
                foreach ($categories as $category) {
                   $name = $category['category'];
-                  $id = $category['id'];
-                  echo "<li><a href='recipesSearch1?id='"'$id'">$name</a></li>";
+                  echo "<li><a href='#'>$name</a></li>";
                }
             ?>
          </ul>
