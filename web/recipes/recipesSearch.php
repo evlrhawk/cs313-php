@@ -57,8 +57,7 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <!-- body -->
 <div class="container-fluid text-center">    
   <div class="row content">
-    <div style="text-align: center;" class="col-sm-8 text-left">
-    <div class="col-sm-2 sidenav">
+   <div class="col-sm-2 sidenav">
       <form>
          Category:
          <ul>
@@ -70,7 +69,7 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
          </ul>
       </form>
     </div> 
-    <div class="col-sm-10">
+    <div style="text-align: center;" class="col-sm-8 text-left">
       <?php
          foreach ($recipes as $recipe) {
             $name = $recipe['name'];
@@ -80,7 +79,6 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <img src='$pic' alt='$name'></a></div>";
          }
       ?>
-   </div>
     </div>
        
   </div>
