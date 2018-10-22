@@ -66,13 +66,13 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <div class="row content">
    <div class="col-sm-2 sidenav">
       <form>
-         Category:
+         <p class="text-left">Category:</p>
          <ul>
             <?php
                foreach ($categories as $category) {
                   $name = $category['category'];
                   $id = $category['id'];
-                  echo "<li><a href=";
+                  echo "<li class='text-left'><a href=";
                   echo '"recipesSearch1.php?id=';
                   echo "'$id'" . '">';
                   echo $name . "</a></li>";
