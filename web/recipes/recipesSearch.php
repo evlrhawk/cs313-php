@@ -13,7 +13,7 @@ $stmt = $db->prepare('SELECT id, name, pic FROM recipes WHERE id < 9');
 $stmt->execute();
 $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$stmt = $db->prepare('SELECT id, category FROM categories');
+$stmt = $db->prepare('SELECT id, category FROM categories ORDER BY category');
 $stmt->execute();
 $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -71,7 +71,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
                   $id = $category['id'];
                   echo "<li><a href=";
                   echo '"recipesSearch1.php?id=';
-                  echo "'$id'" .'">';
+                  echo "'$id'" . '">';
                   echo $name . "</a></li>";
                }
             ?>
