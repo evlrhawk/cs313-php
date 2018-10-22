@@ -64,8 +64,8 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $name = $recipe['name'];
             $pic = $recipe['pic'];
             echo " <div class='col-sm-4 well'>
-            $name<br>
-            <img src='$pic' alt='$name'></div>";
+            <a href='#'>$name<br>
+            <img src='$pic' alt='$name'></a></div>";
          }
       ?>
     </div>
