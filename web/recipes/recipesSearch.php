@@ -70,6 +70,7 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
       </form>
     </div> 
     <div style="text-align: center;" class="col-sm-8 text-left">
+      <br><br>
       <?php
          foreach ($recipes as $recipe) {
             $name = $recipe['name'];
