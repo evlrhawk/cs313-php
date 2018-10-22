@@ -70,6 +70,7 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
          </ul>
       </form>
     </div> 
+    <div class="col-sm-10">
       <?php
          foreach ($recipes as $recipe) {
             $name = $recipe['name'];
@@ -79,6 +80,7 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <img src='$pic' alt='$name'></a></div>";
          }
       ?>
+   </div>
     </div>
        
   </div>
