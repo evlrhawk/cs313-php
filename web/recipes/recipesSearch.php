@@ -63,7 +63,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <div class="row content">
    <div class="col-sm-2 sidenav">
       <form>
-         Category:
+         <p class="text-left">Category:</p>
          <ul>
             <?php
                foreach ($categories as $category) {
