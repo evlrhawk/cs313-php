@@ -32,5 +32,10 @@ footer {
 
 img{
   width: 225px;
-  height: 150px;
+  height: auto;
+}
+.img
+{
+  width: 225px;
+  height: 150px;s
 }
