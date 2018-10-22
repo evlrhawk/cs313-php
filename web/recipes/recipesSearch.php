@@ -59,12 +59,7 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <div class="row content">
     <div style="text-align: center;" class="col-sm-8 text-left"> 
       <h1>Search, and find your delight!!</h1>
-      <p></p>
-      <hr>
-      <h3></h3>
-      <p></p>
-    </div>
-       <?php
+      <?php
          foreach ($recipes as $recipe) {
             $name = $recipe['name'];
             $pic = $recipe['pic'];
@@ -73,6 +68,8 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <img src='$pic' alt='$name'>";
          }
       ?>
+    </div>
+       
   </div>
 </div>
 
