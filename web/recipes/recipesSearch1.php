@@ -87,9 +87,12 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
          foreach ($recipes as $recipe) {
             $name = $recipe['name'];
             $pic = $recipe['pic'];
+            $id = $recipe['id'];
             echo " <div class='col-sm-4 well'>
-            <a href='#'>$name<br>
-            <img class='img' src='$pic' alt='$name'></a></div>";
+            <a href=";
+            echo '"recipes1.php?id=';
+            echo "'$id'" .'">';
+            echo $name . "<br><img class='img' src='$pic' alt='$name'></a></div>";
          }
       ?>
     </div>
