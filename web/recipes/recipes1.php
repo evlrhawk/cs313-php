@@ -15,7 +15,7 @@ $id = $_GET["id"];
 
 
 $stmt = $db->prepare("SELECT name, recipe, pic FROM recipes WHERE id = :id");
-$db->bindValue(':i', $id, PDO::PARAM_INT);
+$db->bindValue(':id', $id, PDO::PARAM_INT);
 $stmt->execute();
 $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
