@@ -71,7 +71,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
                   $id = $category['id'];
                   echo "<li class='text-left'><a href=";
                   echo '"recipesSearch1.php?id=';
-                  echo "'$id'" . '">';
+                  echo "$id" . '">';
                   echo $name . "</a></li>";
                }
             ?>
@@ -88,7 +88,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             echo " <div class='col-sm-4 well'>
             <a href=";
             echo '"recipes1.php?id=';
-            echo "'$id'" .'">';
+            echo "$id" .'">';
             echo $name . "<br><img class='img' src='$pic' alt='$name'></a></div>";
          }
       ?>
