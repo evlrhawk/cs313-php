@@ -15,12 +15,12 @@ $id = $_GET["id"];
 
 
 $stmt = $db->prepare("SELECT name, recipe, pic FROM recipes WHERE id = :id");
-$db->bindValue(':id', $id, PDO::PARAM_INT);
+$stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $stmt->execute();
 $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $stmt = $db->prepare("SELECT id, rating, comment FROM comments WHERE recipes_id = :id");
-$db->bindValue(':id', $id, PDO::PARAM_INT);
+$stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $stmt->execute();
 $comments = $stmt->fetchAll(PDO::FETCH_ASSOC);
 

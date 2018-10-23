@@ -13,7 +13,7 @@ $db = get_db();
 $id = $_GET["id"];
 
 $stmt = $db->prepare("SELECT id, name, pic FROM recipes WHERE categories_id = :id");
-$db->bindValue(':id', $id, PDO::PARAM_INT);
+$stmt->bindValue(':id', $id, PDO::PARAM_INT);
 $stmt->execute();
 $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
