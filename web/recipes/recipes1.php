@@ -12,9 +12,13 @@ $db = get_db();
 
 $id = $_GET["id"];
 
-$stmt = $db->prepare("SELECT id, name, pic FROM recipes WHERE categories_id = $id");
+$stmt = $db->prepare("SELECT name, recipe, pic FROM recipes WHERE id = $id");
 $stmt->execute();
 $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$stmt = $db->prepare("SELECT id, rating, comment FROM comments WHERE recipes_id = $id");
+$stmt->execute();
+$comments = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $stmt = $db->prepare('SELECT id, category FROM categories ORDER BY category');
 $stmt->execute();
@@ -49,9 +53,9 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="recipes.php">Home</a></li>
+        <li class="active"><a href="recipes.php">Home</a></li>
         <li><a href="about.php">About</a></li>
-        <li class="active"><a href="recipesSearch.php">Recipes</a></li>
+        <li><a href="recipesSearch.php">Recipes</a></li>
         <li><a href="contacts.php">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -87,9 +91,11 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
          foreach ($recipes as $recipe) {
             $name = $recipe['name'];
             $pic = $recipe['pic'];
+            $recipe = $recipe['recipe'];
             echo " <div class='col-sm-4 well'>
-            <a href='#'>$name<br>
-            <img class='img' src='$pic' alt='$name'></a></div>";
+            <img class='img' src='$pic' alt='$name'><br>
+            $name<br>
+            $recipe</div>";
          }
       ?>
     </div>
