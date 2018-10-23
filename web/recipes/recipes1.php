@@ -93,7 +93,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $pic = $recipe['pic'];
             $recipe = $recipe['recipe'];
             echo " <div class='col-sm-8 well text-left'>
-            <img class='' src='$pic' alt='$name'><br><br>
+            <img class='img2' src='$pic' alt='$name'><br><br>
             $name<br><br>
             $recipe</div>";
          }
