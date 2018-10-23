@@ -85,7 +85,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $name = $recipe['name'];
             $pic = $recipe['pic'];
             $id = $recipe['id'];
-            echo " <div class='col-sm-4 well'>
+            echo " <div class='col-sm-4 well search'>
             <a href=";
             echo '"recipes1.php?id=';
             echo "'$id'" .'">';
