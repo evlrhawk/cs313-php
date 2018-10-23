@@ -95,7 +95,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             echo " <div class='col-sm-8 text-left'>
             <img class='img2' src='$pic' alt='$name'><br><br>
             $name<br><br>
-            $recipe</div>";
+            <pre>$recipe</pre></div>";
          }
       ?>
     </div>
