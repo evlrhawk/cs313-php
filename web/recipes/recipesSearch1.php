@@ -69,6 +69,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <form>
          <p class="text-left">Category:</p>
          <ul>
+            <li class="text-left"><a href="recipesSearch.php">All</a></li>
             <?php
                foreach ($categories as $category) {
                   $name = $category['category'];
