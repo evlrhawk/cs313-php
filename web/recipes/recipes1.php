@@ -82,7 +82,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
                   $id = $category['id'];
                   echo "<li class='text-left'><a href=";
                   echo '"recipesSearch1.php?id=';
-                  echo "'$id'" . '">';
+                  echo "$id" . '">';
                   echo $name . "</a></li>";
                }
             ?>
