@@ -27,9 +27,7 @@ $courses = $stmt->fetchALL(PDO::FETCH_ASSOC);
          $code = $course['code'];
          $id = $course['id'];
 
-         echo "<li><a href='notes.php?id=";
-         echo "$id";
-         echo "'>$code - $name</p></li>\n";
+         echo "<li><a href='notes.php?id=$id'>$code - $name</p></li>\n";
       }
    ?>
 
