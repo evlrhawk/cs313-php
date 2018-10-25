@@ -19,7 +19,7 @@ $courses = $stmt->fetchALL(PDO::FETCH_ASSOC);
 </head>
 <body>
 
-<h1>Notese for: <?php echo "course_code - $course_name"; ?></h1>
+<h1>Notese for: <?php echo "$course_code - $course_name"; ?></h1>
 
 <?php
 
