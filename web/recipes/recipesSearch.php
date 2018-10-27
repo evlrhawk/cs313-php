@@ -122,7 +122,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
                foreach ($categories as $category) {
                   $name = $category['category'];
                   $id = $category['id'];
-                  echo "<input class='left' type='radio' name='cat' value='$id'>$name<br>";
+                  echo "<input type='radio' name='cat' value='$id'>$name<br>";
                }
             ?>
 
