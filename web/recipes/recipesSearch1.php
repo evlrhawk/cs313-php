@@ -56,7 +56,16 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <li><a href="contacts.php">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login | Sign Up</a></li>
+        <?php
+        
+        if (isset($_SESSION["login"])) {
+          echo "<li><a href='logout.php'><span class='glyphicon glyphicon-log-in'></span> Log Out</a></li>";
+        }
+        else{
+          echo "<li><a href='login.php'><span class='glyphicon glyphicon-log-in'></span> Login | Sign Up</a></li>";
+        }
+        
+        ?>
       </ul>
     </div>
   </div>
