@@ -113,7 +113,39 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
          }
       ?>
     </div>
-       
+    <div class="col-sm-2 sidenav">
+      <?php
+
+        if (isset($_SESSION["login"])) {
+          
+      ?>
+        <form action="recipeInsert.php" method="post">
+          <label for="food">Food:</label><br>
+          <input type="text" name="food" id="food">
+          <br>
+          <br>
+
+          <label for="1">Category:</label><br>
+          <input type="radio" name="cat" value="3" id="1">Beef<br>
+          <input type="radio" name="cat" value="4">Chicken<br>
+          <input type="radio" name="cat" value="2">Fish<br>
+          <input type="radio" name="cat" value="1">Pasta<br>
+          <input type="radio" name="cat" value="5">Pork<br><br>
+
+          <label for="2">Recipe:</label>
+          <input type="textarea" name="recipe">
+
+          <label for="3">Picture URL:</label><br>
+          <input type="text" name="pic">
+          <input type="hidden" name="id" value=<?php echo $_SESSION["login"]?> >
+          <input type="submit" name="submit" value="Submit Recipe">
+
+        </form>
+
+        <?php
+          }
+        ?>
+    </div>
   </div>
 </div>
 
