@@ -52,15 +52,17 @@ $db = get_db();
       <p><img src="https://www.vindulge.com/wp-content/uploads/2016/04/Mexican-Smoked-Burgers-2-727x1024.jpg" alt="Burnt Ends"></p>
     </div>
     <div style="text-align: center;" class="col-sm-6 text-left"> 
-      <form class="well" action="loginCheck.php" method="post">
+      <form action="loginCheck.php" method="post">
         Username:
         <input type="text" name="username">
+        <br>
         <br>
         Password:
         <input type="password" name="pwd">
         <br>
-        <input type="submit" name="submit" value="Login">
-        <input type="submit" name="submit1" value="Create Account" formaction="create.php">
+        <br>
+        <input class="left" type="submit" name="submit" value="Login">
+        <input class="right" type="submit" name="submit1" value="Create Account" formaction="create.php">
       </form>
     </div>
     <div class="col-sm-3 sidenav">
