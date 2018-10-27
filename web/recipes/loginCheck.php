@@ -17,6 +17,7 @@ $newpage;
 
 if ($pwd == $user['password']) {
    $newpage = "recipes.php";
+   $_SESSION["login"] = $user['id'];
 }
 else{
    $newpage = "login.php";
