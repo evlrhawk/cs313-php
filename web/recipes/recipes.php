@@ -40,7 +40,7 @@ $db = get_db();
         <?php
         
         if (isset($_SESSION["login"])) {
-          echo "<li><a href='login.php'><span class='glyphicon glyphicon-log-in'></span> Log Out</a></li>";
+          echo "<li><a href='logout.php'><span class='glyphicon glyphicon-log-in'></span> Log Out</a></li>";
         }
         else{
           echo "<li><a href='login.php'><span class='glyphicon glyphicon-log-in'></span> Login | Sign Up</a></li>";
