@@ -121,12 +121,14 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
           <br>
           <br>
 
-          <label for="1">Category:</label><br>
-          <input type="radio" name="cat" value="3" id="1">Beef<br>
-          <input type="radio" name="cat" value="4">Chicken<br>
-          <input type="radio" name="cat" value="2">Fish<br>
-          <input type="radio" name="cat" value="1">Pasta<br>
-          <input type="radio" name="cat" value="5">Pork<br><br>
+          <label>Category:</label><br>
+          <?php
+               foreach ($categories as $category) {
+                  $name = $category['category'];
+                  $id = $category['id'];
+                  echo "<input type='radio' name='cat' value='$id'>$name<br>";
+               }
+            ?>
 
           <label for="2">Recipe:</label>
           <input type="textarea" name="recipe">
