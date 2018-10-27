@@ -106,6 +106,11 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
       ?>
     </div>
     <div class="col-sm-2 sidenav">
+      <?php
+
+        if (isset($_SESSION["login"])) {
+          
+      ?>
         <form action="recipeInsert.php" method="post">
           <label for="food">Food:</label>
           <input type="text" name="food" id="food">
@@ -128,6 +133,10 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
           <input type="submit" name="submit" value="Submit Recipe">
 
         </form>
+
+        <?php
+          }
+        ?>
     </div>
        
   </div>
