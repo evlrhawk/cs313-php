@@ -105,7 +105,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
          }
       ?>
     </div>
-    <div class="col-sm-3 sidenav">
+    <div class="col-sm-2 sidenav">
         <form action="recipeInsert.php" method="post">
           <label for="food">Food:</label>
           <input type="text" name="food" id="food">
