@@ -53,6 +53,8 @@ $db = get_db();
     </div>
     <div style="text-align: center;" class="col-sm-6 text-left"> 
       <form action="loginCheck.php" method="post">
+        <br>
+        <br>
         Username:
         <input type="text" name="username">
         <br>
@@ -61,8 +63,8 @@ $db = get_db();
         <input type="password" name="pwd">
         <br>
         <br>
-        <input class="left" type="submit" name="submit" value="Login">
-        <input class="right" type="submit" name="submit1" value="Create Account" formaction="create.php">
+        <input type="submit" name="submit" value="Login">
+        <input type="submit" name="submit1" value="Create Account" formaction="create.php">
       </form>
     </div>
     <div class="col-sm-3 sidenav">
