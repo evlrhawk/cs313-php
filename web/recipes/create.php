@@ -25,7 +25,7 @@ $stmt->execute();
 
 $newpage = "recipes.php"
 
-$_SESSION["login"] = $db->lastInsertId('users_id_seq');
+$_SESSION["login"] = $stmt->lastInsertId('users_id_seq');
 }
 
 header("Location: $newpage");
