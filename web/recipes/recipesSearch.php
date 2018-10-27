@@ -127,7 +127,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             ?>
 
           <label for="2">Recipe:</label>
-          <input type="textarea" name="recipe">
+          <textarea name="recipe">
 
           <label for="3">Picture URL:</label><br>
           <input type="text" name="pic">
