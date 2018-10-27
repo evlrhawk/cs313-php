@@ -23,7 +23,7 @@ $stmt->bindValue(":user", $username, PDO::PARAM_STR);
 $stmt->bindValue(":pwd", $pwd, PDO::PARAM_STR);
 $stmt->execute();
 
-$newpage = "recipes.php"
+$newpage = "recipes.php";
 
  $newId = $db->lastInsertId('users_id_seq');
  $_SESSION["login"] = $newId
