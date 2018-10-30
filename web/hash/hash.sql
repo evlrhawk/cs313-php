@@ -1,0 +1,6 @@
+CREATE TABLE user_hash
+(
+     id SERIAL PRIMARY KEY
+   , username VARCHAR(100) UNIQUE NOT NULL
+   , pwd VARCHAR(255) NOT NULL
+);
