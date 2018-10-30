@@ -121,7 +121,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
       ?>
         <form action="recipeInsert.php" method="post">
           <label for="food">Food:</label><br>
-          <input type="text" name="food" id="food">
+          <input type="text" name="food" id="food" required>
           <br>
           <br>
 
@@ -135,10 +135,10 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             ?>
 
           <label for="2">Recipe:</label>
-          <input type="textarea" name="recipe">
+          <input type="textarea" name="recipe" required>
 
           <label for="3">Picture URL:</label><br>
-          <input type="text" name="pic">
+          <input type="text" name="pic" required>
           <input type="hidden" name="id" value=<?php echo $_SESSION["login"]?> >
           <input type="submit" name="submit" value="Submit Recipe">
 
