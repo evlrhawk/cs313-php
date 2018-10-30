@@ -115,7 +115,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
         if (isset($_SESSION["login"])) {
           
       ?>
-        <form action="recipeInsert.php" method="post">
+        <form class="text-left" action="recipeInsert.php" method="post">
           <label for="food">Food:</label><br>
           <input type="text" name="food" id="food" required>
           <br>
