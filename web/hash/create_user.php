@@ -11,7 +11,7 @@ $newPage = 'sign_in.php';
 
 $db = get_db();
 
-$stmt = $db->prepare("INSERT INTO user_hash (user, pwd) VALUES (:user, :pwd);");
+$stmt = $db->prepare("INSERT INTO user_hash (username, pwd) VALUES (:user, :pwd);");
 $stmt->bindValue(":user", $user, PDO::PARAM_STR);
 $stmt->bindValue(":pwd", $passwordHash, PDO::PARAM_STR);
 $stmt->execute();
