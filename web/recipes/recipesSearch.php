@@ -118,14 +118,15 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
           <br>
 
           <label>Category:</label><br>
+          <select name="cat">
           <?php
                foreach ($categories as $category) {
                   $name = $category['category'];
                   $id = $category['id'];
-                  echo "<input type='radio' name='cat' value='$id'>$name<br>";
+                  echo "<option value='$id'>$name</option><br>";
                }
             ?>
-
+          </select>
           <label for="2">Recipe:</label><br>
           <textarea name="recipe" required></textarea>
 
