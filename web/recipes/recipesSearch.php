@@ -126,7 +126,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
                   echo "<option value='$id'>$name</option><br>";
                }
             ?>
-          </select>
+          </select><br>
           <label for="2">Recipe:</label><br>
           <textarea name="recipe" required></textarea>
 
