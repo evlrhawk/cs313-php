@@ -7,8 +7,9 @@ $stmt->execute();
 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($users as $user) {
+   $id = $user['id'];
    $passwordHash = password_hash($user['password'], PASSWORD_DEFAULT);
-   $stmt = $db->prepare(" UPDATE users SET password = $passwordHash WHERE id = $user['id'];");
+   $stmt = $db->prepare(" UPDATE users SET password = $passwordHash WHERE id = $id;");
    $stmt->execute();
 
 }
