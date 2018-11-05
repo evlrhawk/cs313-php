@@ -6,14 +6,14 @@ $stmt = $db->prepare("SELECT id, password FROM users");
 $stmt->execute();
 $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-foreach ($users as $user) {
-   $id = $user['id'];
-   $pwd = $user['password'];
-   $passwordHash = password_hash($pwd, PASSWORD_DEFAULT);
-   $stmt = $db->prepare(" UPDATE users SET password = '$passwordHash' WHERE id = $id;");
-   $stmt->execute();
+// foreach ($users as $user) {
+//    $id = $user['id'];
+//    $pwd = $user['password'];
+//    $passwordHash = password_hash($pwd, PASSWORD_DEFAULT);
+//    $stmt = $db->prepare(" UPDATE users SET password = '$passwordHash' WHERE id = $id;");
+//    $stmt->execute();
 
-}
+// }
 
 ?>
 

@@ -18,6 +18,8 @@ if (isset($user['username'])) {
    $newpage = "login.php";
 }
 else{
+$pwd = password_hash($pwd, PASSWORD_DEFAULT);
+
 $stmt = $db->prepare("INSERT INTO users(username, password) VALUES (:user, :pwd)");
 $stmt->bindValue(":user", $username, PDO::PARAM_STR);
 $stmt->bindValue(":pwd", $pwd, PDO::PARAM_STR);
