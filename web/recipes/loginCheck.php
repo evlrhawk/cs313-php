@@ -15,7 +15,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $newpage;
 
-if (password_verify($pwd, $user['password']) {
+if (password_verify($pwd, $user['password'])) {
    $newpage = "recipes.php";
    $_SESSION["login"] = $user['id'];
 }
