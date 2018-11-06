@@ -119,9 +119,8 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
          }
       ?>
       <?php
-
+         echo "<div class='col-sm-8 text-left well'>"; 
         if (isset($_SESSION["login"])) {
-          echo "<div class='col-sm-8 text-left well'>"; 
           
       ?>
         <form class="text-left" action="commentInsert.php" method="post">
