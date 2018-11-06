@@ -57,11 +57,17 @@ session_start();
       <p><img src="https://www.vindulge.com/wp-content/uploads/2016/04/Mexican-Smoked-Burgers-2-727x1024.jpg" alt="Burnt Ends"></p>
     </div>
     <div style="text-align: center;" class="col-sm-8 text-left"> 
-      <h1> Contact Us Here at Righteous Recipes!</h1>
-      <p>Coming Soon</p>
+      <h1> Contact Us Here at Righteous Recipes!</h1>      
       <hr>
-      <h3></h3>
-      <p>In all reality, just look around the class room, Im here close by.</p>
+      <form class="text-left" action="mail.php" method="post">
+        <label>Subject:</label><br>
+        <input type="text" name="sub" required>
+        <br><br>
+        <label>Message:</label><br>
+        <textarea name="message" required></textarea>
+        <br><br>
+        <input type="submit" name="submit" value="submit">
+      </form>
     </div>
     <div class="col-sm-2 sidenav">
         <img src="http://blog.gentlemint.com/media/photos/plated-tomahawk-steak-restaurant.jpg.1170x750_q85.jpg" alt=" Tomahawk Ribeye">
