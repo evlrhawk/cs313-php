@@ -123,7 +123,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
         if (isset($_SESSION["login"])) {
           
       ?>
-        <form class="text-left" action="commentInsert.php" method="post">
+        <form class="text-left well" action="commentInsert.php" method="post">
           Rating:
           <select name="rating">
             <option value="1">1</option>
