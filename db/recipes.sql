@@ -42,6 +42,8 @@ ADD COLUMN name VARCHAR(30);
 ALTER TABLE recipes
 DROP COLUMN date;
 
+INSERT INTO categories(category) VALUES ('Sandwhiches'); 
+
 INSERT INTO users(username, password)
 Values ('admin', '0268');
 
@@ -83,4 +85,32 @@ UPDATE recipes SET pic = 'https://www.smoking-meat.com/image-files/IMG_1331-1000
 WHERE id = 1;
 
 UPDATE recipes SET pic = 'https://www.slowcookersociety.com/wp-content/uploads/2017/05/Crock-Pot-Cream-Cheese-Chicken-Taquitos1.jpg' 
+WHERE id = 2;
+
+UPDATE recipes 
+SET recipe = 'Materials: 
+-Brisket
+-Butcher Paper
+-1:1 Salt & Pepper Mix
+
+Directions:
+Trim excess fat and dried meat from brisket. Smoke at 225 
+for 16 hours, stopping 4-6 hours in to wrap in butcher''s 
+paper. Remove when at 198 internally, and when Brisket is tender.' 
+WHERE id = 1;
+
+UPDATE recipes 
+SET recipe = 'Materials:
+-Chicken
+-Cream Cheese
+-Cheddar Cheese
+-Salt
+-Pepper
+-Tortillas
+
+Directions:
+Cook chicken in slow cooker, with salt, pepper, and cream cheese, 
+on high for 4-6 hours. Shred chicken, add cheddar cheese, and cook
+for another 15 minutes. Scoop chicken into tortillas and roll up 
+into taquitos. Bake in oven for 8-10 minutes, at 375, or until crispy.' 
 WHERE id = 2;
