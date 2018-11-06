@@ -119,14 +119,14 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
          }
       ?>
       <?php
-         
+         echo " <div class='col-sm-8 text-left'> <p>Comments:</p>";
+
          foreach ($comments as $comment) {
             $id = $comment['id'];
             $rating = $comment['rating'];
             $comment = $comment['comment'];
-            echo " <div class='col-sm-8 text-left'>
-            Average Rating: $avgR /5<br><br>
-            Rating: $rating<br><pre>$comment</pre></div>";
+            
+            echo "Rating: $rating<br><pre>$comment</pre></div>";
          }
       ?>
     </div>
