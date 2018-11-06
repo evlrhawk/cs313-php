@@ -20,7 +20,7 @@ $stmt->bindValue(":id", $id, PDO::PARAM_INT);
 $stmt->execute();
 $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$stmt = $db->prepare('SELECT id, rating, comment FROM comments WHERE recipes_id = :id');
+$stmt = $db->prepare('SELECT id, rating, comment, AVG(comments.rating) AS avgR FROM comments WHERE recipes_id = :id');
 $stmt->bindValue(":id", $id, PDO::PARAM_INT);
 $stmt->execute();
 $comments = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -113,10 +113,21 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
          }
       ?>
     </div>
+    <!-- RIGHT NAVBAR -->
     <div class="col-sm-2 sidenav">
       <?php
 
-        if (isset($_SESSION["login"])) {
+         foreach ($comments as $comment) {
+            $id = $comment['id'];
+            $rating = $comment['rating'];
+            $comment = $comment['comment'];
+            $avgR = $comment['avgR'];
+            echo " <div class='col-sm-8 text-left'>
+            Average Rating: $avgR<br><br>
+            $rating<pre>$comment</pre></div>";
+         }
+
+        /*if (isset($_SESSION["login"])) {
           
       ?>
         <form class="text-left" action="recipeInsert.php" method="post">
@@ -145,7 +156,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </form>
 
         <?php
-          }
+          }*/
         ?>
     </div>
   </div>
