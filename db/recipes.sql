@@ -114,3 +114,22 @@ on high for 4-6 hours. Shred chicken, add cheddar cheese, and cook
 for another 15 minutes. Scoop chicken into tortillas and roll up 
 into taquitos. Bake in oven for 8-10 minutes, at 375, or until crispy.' 
 WHERE id = 2;
+
+
+INSERT INTO comments(rating, comment, recipes_id) 
+VALUES
+(
+  5
+, 'These are INCREDIBLE!! They came out very crisp and flavor!!
+Also, the kids loved them, so we will be making them again!!'
+, 2
+);
+
+ALTER TABLE comments
+ADD COLUMN user_id INT REFERENCES users(id);
+
+UPDATE comments SET user_id = 1 
+WHERE id = 1;
+
+ALTER TABLE comments
+ALTER COLUMN user_id SET NOT NULL;
