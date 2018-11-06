@@ -62,6 +62,7 @@ session_start();
       <form class="text-center" action="mail.php" method="post">
         <label>Email:</label><br>
         <input type="text" name="from" required>
+        <br><br>
         <label>Subject:</label><br>
         <input type="text" name="sub" required>
         <br><br>
