@@ -115,7 +115,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $avgR = $ratings['avgr'];
             echo " <div class='col-sm-8 text-left'>
             <img class='img2' src='$pic' alt='$name'><br><br>
-            $name $avgr /5<br><pre>$recipe</pre></div><br>";
+            $name $avgR /5<br><pre>$recipe</pre></div><br>";
          }
       ?>
       <?php
