@@ -119,6 +119,32 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
          }
       ?>
       <?php
+
+        if (isset($_SESSION["login"])) {
+          
+      ?>
+        <form class="text-left" action="commentInsert.php" method="post">
+          <select name="rating">Rating:
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+         </select>
+
+          <label for="2">Comment:</label>
+          <input type="textarea" name="comment" required>
+
+          <input type="hidden" name="id" value=<?php echo $_SESSION["login"]?> >
+          <input type="hidden" name="user_id" value=<?php echo $id ?>>
+          <input type="submit" name="submit" value="Submit Recipe">
+
+        </form>
+
+        <?php
+          }
+        ?>
+      <?php
          echo " <div class='col-sm-8 text-left'> <p>Comments:</p>";
 
          foreach ($comments as $comment) {
