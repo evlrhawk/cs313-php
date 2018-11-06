@@ -12,7 +12,7 @@ $newpage;
 require('dbConnect.php');
 $db = get_db();
 
-$stmt = $db->prepare("INSERT INTO comments(user_id, rating, comment, recipe_id) VALUES ($user_id, :rating, :comment, :recipe_id)");
+$stmt = $db->prepare("INSERT INTO comments(user_id, rating, comment, recipes_id) VALUES ($user_id, :rating, :comment, :recipe_id)");
 $stmt->bindValue(":rating", $rating, PDO::PARAM_INT);
 $stmt->bindValue(":recipe_id", $recipe_id, PDO::PARAM_INT);
 $stmt->bindValue(":comment", $comment, PDO::PARAM_STR);
