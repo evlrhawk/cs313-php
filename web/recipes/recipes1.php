@@ -124,7 +124,8 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
           
       ?>
         <form class="text-left" action="commentInsert.php" method="post">
-          <select name="rating">Rating:
+          Rating:
+          <select name="rating">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -135,7 +136,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
          <br>
           <label for="2">Comment:</label><br>
           <input type="textarea" name="comment" required>
-
+         <br>
           <input type="hidden" name="id" value=<?php echo $_SESSION["login"]?> >
           <input type="hidden" name="user_id" value=<?php echo $id ?>>
           <input type="submit" name="submit" value="Submit Recipe">
