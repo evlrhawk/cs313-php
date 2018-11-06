@@ -25,7 +25,7 @@ $stmt->bindValue(":id", $id, PDO::PARAM_INT);
 $stmt->execute();
 $comments = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$stmt = $db->prepare('SELECT TRUNC(AVG(rating, 2)) FROM comments WHERE recipes_id = :id');
+$stmt = $db->prepare('SELECT TRUNC(AVG(rating), 2) FROM comments WHERE recipes_id = :id');
 $stmt->bindValue(":id", $id, PDO::PARAM_INT);
 $stmt->execute();
 $ratings = $stmt->fetchAll(PDO::FETCH_ASSOC);
