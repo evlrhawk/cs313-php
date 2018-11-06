@@ -124,7 +124,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
           
       ?>
         <form class="text-left" action="commentInsert.php" method="post">
-          Rating:
+          <label>Rating:</label><br>
           <select name="rating">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -154,7 +154,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $rating = $comment['rating'];
             $comment = $comment['comment'];
             
-            echo "Rating: $rating<br><pre class='white'>$comment</pre></div>";
+            echo "Rating: $rating<br><pre>$comment</pre></div>";
          }
       ?>
     </div>
