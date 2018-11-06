@@ -25,7 +25,7 @@ $stmt->bindValue(":id", $id, PDO::PARAM_INT);
 $stmt->execute();
 $comments = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$stmt = $db->prepare('SELECT TRUNC(AVG(rating), 2) FROM comments WHERE recipes_id = :id');
+$stmt = $db->prepare('SELECT TRUNC(AVG(rating), 2) AS avgR FROM comments WHERE recipes_id = :id');
 $stmt->bindValue(":id", $id, PDO::PARAM_INT);
 $stmt->execute();
 $ratings = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -129,7 +129,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $avgR = $ratings['avgR'];
             echo " <div class='col-sm-8 text-left'>
             Average Rating: $avgR/5<br><br>
-            $rating<pre>$comment</pre></div>";
+            Rating: $rating<br>$comment</div>";
          }
 
         /*if (isset($_SESSION["login"])) {
