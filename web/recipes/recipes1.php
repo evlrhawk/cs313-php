@@ -123,7 +123,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <?php
          $avgR = $ratings['avgR'];
          echo " <div class='col-sm-8 text-left'>
-            Average Rating: $avgR /5<br><br>";
+            Average Rating: '$avgR' /5<br><br>";
          foreach ($comments as $comment) {
             $id = $comment['id'];
             $rating = $comment['rating'];
