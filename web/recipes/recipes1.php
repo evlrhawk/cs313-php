@@ -112,20 +112,21 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $name = $recipe['name'];
             $pic = $recipe['pic'];
             $recipe = $recipe['recipe'];
+            $avgR = $ratings['avgr'];
             echo " <div class='col-sm-8 text-left'>
             <img class='img2' src='$pic' alt='$name'><br><br>
-            $name<pre>$recipe</pre></div>";
+            $name $avgr /5<br><pre>$recipe</pre></div>";
          }
       ?>
       <?php
-         $avgR = $ratings['avgr'];
-         echo " <div class='col-sm-8 text-left'>
-            Average Rating: $avgR /5<br><br>";
+         
          foreach ($comments as $comment) {
             $id = $comment['id'];
             $rating = $comment['rating'];
             $comment = $comment['comment'];
-            echo "Rating: $rating<br><p class='well'>$comment</p></div>";
+            echo " <div class='col-sm-8 text-left'>
+            Average Rating: $avgR /5<br><br>
+            Rating: $rating<br><pre>$comment</pre></div>";
          }
       ?>
     </div>
