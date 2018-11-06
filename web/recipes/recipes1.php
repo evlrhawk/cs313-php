@@ -154,7 +154,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $rating = $comment['rating'];
             $comment = $comment['comment'];
             
-            echo "Rating: $rating<br><pre>$comment</pre></div>";
+            echo "Rating: $rating<br><pre class='white'>$comment</pre></div>";
          }
       ?>
     </div>
