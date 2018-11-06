@@ -147,7 +147,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
           }
         ?>
       <?php
-         echo " <div class='col-sm-8 text-left'> <p>Comments:</p>";
+         echo "<p>Comments:</p>";
 
          foreach ($comments as $comment) {
             $id = $comment['id'];
