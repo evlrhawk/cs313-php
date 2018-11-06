@@ -129,7 +129,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $avgR = $ratings['avgR'];
             echo " <div class='col-sm-8 text-left'>
             Average Rating: $avgR/5<br><br>
-            Rating: $rating<br>$comment</div>";
+            Rating: $rating<br><p class='well'>$comment</p></div>";
          }
 
         /*if (isset($_SESSION["login"])) {
