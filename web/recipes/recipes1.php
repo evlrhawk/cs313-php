@@ -117,9 +117,6 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $name<pre>$recipe</pre></div>";
          }
       ?>
-    </div>
-    <!-- RIGHT NAVBAR -->
-    <div class="col-sm-2 sidenav">
       <?php
          $avgR = $ratings['avgR'];
          echo " <div class='col-sm-8 text-left'>
@@ -130,8 +127,13 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $comment = $comment['comment'];
             echo "Rating: $rating<br><p class='well'>$comment</p></div>";
          }
+      ?>
+    </div>
+    <!-- RIGHT NAVBAR -->
+    <div class="col-sm-2 sidenav">
+      <?php
 
-        /*if (isset($_SESSION["login"])) {
+        if (isset($_SESSION["login"])) {
           
       ?>
         <form class="text-left" action="recipeInsert.php" method="post">
@@ -160,7 +162,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </form>
 
         <?php
-          }*/
+          }
         ?>
     </div>
   </div>
