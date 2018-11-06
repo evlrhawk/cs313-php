@@ -140,14 +140,14 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
           <input type="hidden" name="id" value=<?php echo $_SESSION["login"]?> >
           <input type="hidden" name="user_id" value=<?php echo $id ?>>
           <input type="submit" name="submit" value="Submit Recipe">
-
+         <br><br>
         </form>
 
         <?php
           }
         ?>
       <?php
-         echo "<br><br><p>Comments:</p>";
+         echo "<p>Comments:</p>";
 
          foreach ($comments as $comment) {
             $id = $comment['id'];
