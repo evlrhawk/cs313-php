@@ -135,8 +135,8 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
          <br>
           <label for="2">Comment:</label><br>
-          <input type="textarea" name="comment" rows="4" required>
-         <br>
+          <textarea name="comment" required></textarea>
+         <br><br>
           <input type="hidden" name="id" value=<?php echo $_SESSION["login"]?> >
           <input type="hidden" name="user_id" value=<?php echo $id ?>>
           <input type="submit" name="submit" value="Submit Recipe">
@@ -181,7 +181,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             ?>
 
           <label for="2">Recipe:</label>
-          <input type="textarea" name="recipe" required>
+          <textarea name="recipe" required></textarea>
 
           <label for="3">Picture URL:</label><br>
           <input type="text" name="pic" required>
