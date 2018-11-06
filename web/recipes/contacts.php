@@ -59,7 +59,7 @@ session_start();
     <div style="text-align: center;" class="col-sm-8 text-left"> 
       <h1> Contact Us Here at Righteous Recipes!</h1>      
       <hr>
-      <form class="text-left" action="mail.php" method="post">
+      <form class="text-center" action="mail.php" method="post">
         <label>Subject:</label><br>
         <input type="text" name="sub" required>
         <br><br>
