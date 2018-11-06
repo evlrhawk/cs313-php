@@ -60,6 +60,8 @@ session_start();
       <h1> Contact Us Here at Righteous Recipes!</h1>      
       <hr>
       <form class="text-center" action="mail.php" method="post">
+        <label>Email:</label><br>
+        <input type="text" name="from" required>
         <label>Subject:</label><br>
         <input type="text" name="sub" required>
         <br><br>
