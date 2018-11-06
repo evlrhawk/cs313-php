@@ -115,7 +115,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $avgR = $ratings['avgr'];
             echo " <div class='col-sm-8 text-left'>
             <img class='img2' src='$pic' alt='$name'><br><br>
-            $name $avgr /5<br><pre>$recipe</pre></div><br>";
+            $name $avgr /5<br><pre>$recipe</pre><br>";
          }
       ?>
       <?php
@@ -123,7 +123,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
         if (isset($_SESSION["login"])) {
           
       ?>
-        <form class="text-left well" action="commentInsert.php" method="post">
+        <form class="text-left" action="commentInsert.php" method="post">
           Rating:
           <select name="rating">
             <option value="1">1</option>
@@ -147,7 +147,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
           }
         ?>
       <?php
-         echo " <div class='col-sm-8 text-left'> <p>Comments:</p>";
+         echo "</div><div class='col-sm-8 text-left'> <p>Comments:</p>";
 
          foreach ($comments as $comment) {
             $id = $comment['id'];
