@@ -5,7 +5,7 @@ session_start();
 $rating = htmlspecialchars($_POST['rating']);
 $comment = htmlspecialchars($_POST['comment']);
 $user_id = htmlspecialchars($_POST['user_id']);
-$recipe_id = htmlspecialchars($_POST['id'])
+$recipe_id = htmlspecialchars($_POST['id']);
 
 $newpage;
 

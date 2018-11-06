@@ -135,7 +135,7 @@ $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
          <br>
           <label for="2">Comment:</label><br>
-          <input type="textarea" name="comment" required>
+          <input type="textarea" name="comment" rows="4" required>
          <br>
           <input type="hidden" name="id" value=<?php echo $_SESSION["login"]?> >
           <input type="hidden" name="user_id" value=<?php echo $id ?>>
